@@ -8,7 +8,7 @@ A tiny OS fit in 248 bytes made by Claude.
 4. "d X" - deletes the file of X.
 
 # Removed features
-The goal was to fit the OS into under 256 bytes, but because of this limit, claude had to remove the following:
+The goal was to fit the OS into under 255 bytes, but because of this limit, claude had to remove the following:
 1. The "> " (cannot know if the OS has started)
 2. The Backspace key (if you make a file called ab, backspace, c, it will be shown ac in "l ac", but "t ac" or "d ac"  does nothing.)
 3. The DS/ES/SS setup (the BIOS has to give zeroed segment registers, which some real machines don't)
