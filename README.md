@@ -8,13 +8,13 @@ A tiny OS fit in 248 bytes made by Claude.
 4. "d X" - deletes the file of X.
 
 # Removed features
-To fit the game into 248 bytes, claude had to remove the following:
+The goal was to fit the OS into under 256 bytes, but because of this limit, claude had to remove the following:
 1. The "> " (cannot know if the OS has started)
-2. The Backspace key (if you make a file called ab, backspace, c, it will be shown ac, but "t ac" or "d ac"  does nothing.)
+2. The Backspace key (if you make a file called ab, backspace, c, it will be shown ac in "l ac", but "t ac" or "d ac"  does nothing.)
 3. The DS/ES/SS setup (the BIOS has to give zeroed segment registers, which some real machines don't)
 
 # How to run (Windows)
-To run the game, you use QEMU, or Bochs. Claude has not tested other emulators, as their BIOS would make it too risky. Real hardware can be used, too, however, make sure it's BIOS gives zeroed segment registers, as there is no DS/ES/SS setup. Downloads for QEMU can be found at [QEMU's download page.](https://www.qemu.org/download/) Downloads for Bochs can be found at [Bochs's SourceForge page.](https://sourceforge.net/projects/bochs/files/bochs/)
+To run the OS, you use QEMU, or Bochs. Claude has not tested other emulators, as their BIOS would make it too risky. Real hardware can be used, too, however, make sure it's BIOS gives zeroed segment registers, as there is no DS/ES/SS setup. Downloads for QEMU can be found at [QEMU's download page.](https://www.qemu.org/download/) Downloads for Bochs can be found at [Bochs's SourceForge page.](https://sourceforge.net/projects/bochs/files/bochs/)
 
 ## Using QEMU
 1. Download the .img file
