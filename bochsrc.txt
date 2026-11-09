@@ -1,0 +1,9 @@
+# bochsrc.txt for SectOS -- put this file in the same folder as disk.img
+#
+# Change the parameters to show where Bochs is and its version.
+romimage: file="C:\Program Files\Bochs-2.7\BIOS-bochs-legacy"
+vgaromimage: file="C:\Program Files\Bochs-2.7\VGABIOS-lgpl-latest"
+# Nothing below needs changing.
+megs: 32
+floppya: 1_44="disk.img", status=inserted
+boot: floppy
