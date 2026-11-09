@@ -26,8 +26,9 @@ To run the game, you use QEMU, or Bochs. Claude has not tested other emulators, 
 
 ## Using Bochs
 1. Download the .img file and the .txt file
-2. Go to whatever directory you installed Bochs at.
-3. Put both the .img and .txt files in
-4. Right click, and select "Open in Terminal."
-5. Wait for everything to finish loading and copy and paste this into the terminal: bochs -q -f bochsrc.txt
-6. Enjoy!
+2. Edit the .txt file to fit your installation preferences
+3. Go to whatever directory you installed Bochs at.
+4. Put both the .img and .txt files in
+5. Right click, and select "Open in Terminal."
+6. Wait for everything to finish loading and copy and paste this into the terminal: bochs -q -f bochsrc.txt
+7. Enjoy!
